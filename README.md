@@ -1,1 +1,1 @@
-# bug-report-examples
+# Bug Report Examples
