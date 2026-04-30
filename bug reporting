@@ -19,10 +19,9 @@ Type: Functional
 Severity: Medium
 
 STR 
-
-Open listing page
-Enter partial keyword in search field
-Click Search
+- Open listing page
+- Enter partial keyword in search field
+- Click Search
 
 Actual Result: No results are displayed.
 
@@ -41,206 +40,155 @@ Severity:Low
 STR
 - Open main listing page
 - Observe column sequence
-- Actual Result
 
-Columns appear in outdated order.
+Actual Result: Columns appear in outdated order.
 
-Expected Result
+Expected Result: Columns should follow the new approved layout order.
 
-Columns should follow the new approved layout order.
+
 
 BUG003 – Removed Column Still Visible on Main Grid
-Description
 
-A deprecated column remains visible after release deployment.
+Description: A deprecated column remains visible after release deployment.
 
-Type
+Type: Visual
 
-Visual
-
-Severity
-
-Low
+Severity: Low
 
 STR
-Open management page
-Inspect table columns
-Actual Result
+-Open management page
+-Inspect table columns
 
-Removed column is still displayed.
+Actual Result: Removed column is still displayed.
 
-Expected Result
+Expected Result: Deprecated column should not be visible.
 
-Deprecated column should not be visible.
+
 
 BUG004 – Summary Section Displays Incorrect Source Value
-Description
 
-The summary area displays wrong source information after selecting transfer origin.
+Description:The summary area displays wrong source information after selecting transfer origin.
 
-Type
+Type: Functional / Data
 
-Functional / Data
-
-Severity
-
-High
+Severity: High
 
 STR
-Open movement page
-Select source location
-Continue to summary screen
-Actual Result
+- Open movement page
+- Select source location
+- Continue to summary screen
 
-Summary shows incorrect source value.
+Actual Result: Summary shows incorrect source value.
 
-Expected Result
+Expected Result: Summary should display selected source location correctly.
 
-Summary should display selected source location correctly.
+
 
 BUG005 – Search Filter Does Not Reset After Clear Action
-Description
 
-After clicking clear filter, previous filtered results remain applied.
+Description: After clicking clear filter, previous filtered results remain applied.
 
-Type
+Type: Functional
 
-Functional
-
-Severity
-
-Medium
+Severity: Medium
 
 STR
-Apply filter on any column
-Click Clear Filter
-Actual Result
+- Apply filter on any column
+- Click Clear Filter
 
-Filtered results remain visible.
+Actual Result: Filtered results remain visible.
 
-Expected Result
+Expected Result: System should restore default unfiltered list.
 
-System should restore default unfiltered list.
+
 
 BUG006 – Search Field Overlaps Page Title on Small Resolution
-Description
 
-Search input overlaps the page title on lower screen resolutions.
+Description: Search input overlaps the page title on lower screen resolutions.
 
-Type
+Type: Visual / Responsive
 
-Visual / Responsive
-
-Severity
-
-Medium
+Severity: Medium
 
 STR
-Open page using low resolution screen
-Observe top header section
-Actual Result
+- Open page using low resolution screen
+- Observe top header section
 
-Search field overlaps page title.
+Actual Result: Search field overlaps page title.
 
-Expected Result
+Expected Result: Elements should remain aligned and readable.
 
-Elements should remain aligned and readable.
+
 
 BUG007 – New Column Header Missing Label
-Description
 
-A newly added column appears without visible header text.
+Description: A newly added column appears without visible header text.
 
-Type
+Type: Visual
 
-Visual
-
-Severity
-
-Low
+Severity: Low
 
 STR
-Open listing page
-Observe new table column
-Actual Result
+- Open listing page
+- Observe new table column
 
-Header is blank.
+Actual Result: Header is blank.
 
-Expected Result
+Expected Result: Column should display correct label.
 
-Column should display correct label.
 
 BUG008 – Edit Screen Fields Not Saving After Reorder
-Description
 
-After UI layout changes, edited values are not saved.
+Description: After UI layout changes, edited values are not saved.
 
-Type
+Type: Functional
 
-Functional
-
-Severity
-
-Critical
+Severity:Critical
 
 STR
-Open edit screen
-Change field values
-Click Save
-Actual Result
+- Open edit screen
+- Change field values
+- Click Save
 
-Changes are lost after page refresh.
+Actual Result:Changes are lost after page refresh.
 
-Expected Result
+Expected Result: Updated values should be saved successfully.
 
-Updated values should be saved successfully.
+
 
 BUG009 – Detail Screen Displays Incorrect Email Value
-Description
 
-The email field on detail page shows data from another record.
+Description: The email field on detail page shows data from another record.
 
-Type
+Type: Functional / Data Integrity
 
-Functional / Data Integrity
-
-Severity
-
-High
+Severity: High
 
 STR
-Open any user detail page
-Verify displayed email address
-Actual Result
+- Open any user detail page
+- Verify displayed email address
 
-Email belongs to different record.
 
-Expected Result
+Actual Result: Email belongs to different record.
 
-Email should match selected record.
+Expected Result: Email should match selected record.
+
+
 
 BUG010 – Grid Loading Breaks When Applying Multiple Filters
-Description
 
-Applying multiple filters causes infinite loading state.
+Description: Applying multiple filters causes infinite loading state.
 
-Type
+Type: Functional / Performance
 
-Functional / Performance
-
-Severity
-
-High
+Severity:High
 
 STR
-Open listing page
-Apply filter A
-Apply filter B
-Click Search
-Actual Result
+- Open listing page
+- Apply filter A
+- Apply filter B
+- Click Search
 
-Grid remains loading indefinitely.
+Actual Result: Grid remains loading indefinitely.
 
-Expected Result
-
-System should return filtered results normally.
+Expected Result: System should return filtered results normally.
